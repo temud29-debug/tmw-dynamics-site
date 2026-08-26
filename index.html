@@ -3,18 +3,17 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="TMW Dynamics develops fitness technology and workout tracking solutions that help athletes measure, analyze, and improve performance."
-    />
-    <meta name="theme-color" content="#07110e" />
-    <title>TMW Dynamics LLC | Fitness Technology</title>
+    <meta name="description" content="TMW Dynamics turns rep velocity and workout data into a clear, day-to-day view of strength progression." />
+    <meta name="theme-color" content="#f2efe7" />
+    <title>TMW Dynamics | See Strength Compound</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="styles.css" />
     <script src="script.js" defer></script>
   </head>
   <body>
     <a class="skip-link" href="#main-content">Skip to content</a>
-
     <header class="site-header">
       <div class="shell nav-wrap">
         <a class="brand" href="index.html" aria-label="TMW Dynamics home">
@@ -22,12 +21,12 @@
           <span>TMW <b>DYNAMICS</b></span>
         </a>
         <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
-          <span class="sr-only">Toggle navigation</span>
-          <span></span><span></span>
+          <span class="sr-only">Toggle navigation</span><span></span><span></span>
         </button>
         <nav id="site-nav" class="site-nav" aria-label="Main navigation">
-          <a class="active" href="index.html" aria-current="page">Home</a>
-          <a href="contact.html">Contact &amp; Support</a>
+          <a href="#product">Product</a>
+          <a href="#method">Method</a>
+          <a href="contact.html">Contact</a>
           <a href="privacy.html">Privacy</a>
         </nav>
       </div>
@@ -36,96 +35,112 @@
     <main id="main-content">
       <section class="hero shell">
         <div class="hero-copy reveal">
-          <p class="eyebrow"><span></span> Fitness intelligence, in motion</p>
-          <h1>Train with<br /><em>better signals.</em></h1>
+          <p class="eyebrow"><span></span> Data-backed strength tracking</p>
+          <h1>Strength should have a <em>trend line.</em></h1>
           <p class="hero-lede">
-            TMW Dynamics develops hardware and software products that help athletes and fitness
-            enthusiasts measure, analyze, and improve training performance.
+            TMW turns rep velocity and workout data into a daily record of what your strength is
+            doing, so progress becomes visible long before it is obvious.
           </p>
           <div class="hero-actions">
-            <a class="button button-primary" href="#what-we-build">Explore our focus <span aria-hidden="true">↘</span></a>
-            <a class="button button-quiet" href="contact.html">Contact us</a>
+            <a class="button button-primary" href="#product">See the product <span aria-hidden="true">&rarr;</span></a>
+            <a class="button button-quiet" href="contact.html">Contact TMW</a>
           </div>
         </div>
 
-        <div class="signal-card reveal delay-1" aria-label="Stylized training performance dashboard">
-          <div class="signal-topline">
-            <span>LIVE PERFORMANCE</span>
-            <span class="status"><i></i> TRACKING</span>
+        <div class="portfolio-panel reveal delay-1" aria-label="Illustrative strength progression dashboard">
+          <div class="panel-kicker"><span>STRENGTH TREND</span><span>SAMPLE VIEW / 30D</span></div>
+          <div class="portfolio-heading">
+            <div>
+              <span class="metric-label">Leg extension e1RM</span>
+              <strong>356.8 <small>lb</small></strong>
+            </div>
+            <div class="change-block"><strong>+18.4 lb</strong><span>+5.4%</span></div>
           </div>
-          <div class="metric-block">
-            <span class="metric-label">Training load</span>
-            <strong>84<small>%</small></strong>
-            <span class="metric-change">+12.4 this week</span>
-          </div>
-          <div class="chart" aria-hidden="true">
-            <div class="grid-lines"></div>
-            <svg viewBox="0 0 560 190" preserveAspectRatio="none" role="presentation">
-              <defs>
-                <linearGradient id="area" x1="0" y1="0" x2="0" y2="1">
-                  <stop offset="0%" stop-color="#b8ff3d" stop-opacity="0.32" />
-                  <stop offset="100%" stop-color="#b8ff3d" stop-opacity="0" />
-                </linearGradient>
-              </defs>
-              <path class="area" d="M0 162 C42 151,52 128,91 136 S150 124,181 116 S226 129,260 96 S304 111,338 80 S389 75,420 89 S481 37,510 49 S539 23,560 18 L560 190 L0 190 Z" />
-              <path class="line" d="M0 162 C42 151,52 128,91 136 S150 124,181 116 S226 129,260 96 S304 111,338 80 S389 75,420 89 S481 37,510 49 S539 23,560 18" />
+          <div class="market-chart" aria-hidden="true">
+            <div class="chart-grid"></div>
+            <svg viewBox="0 0 620 250" preserveAspectRatio="none" role="presentation">
+              <path class="chart-area" d="M0 216 L52 211 L103 198 L155 205 L207 179 L258 186 L310 155 L362 162 L413 125 L465 137 L517 91 L568 104 L620 55 L620 250 L0 250 Z" />
+              <path class="chart-line" d="M0 216 L52 211 L103 198 L155 205 L207 179 L258 186 L310 155 L362 162 L413 125 L465 137 L517 91 L568 104 L620 55" />
+              <g class="chart-points">
+                <circle cx="0" cy="216" r="4" /><circle cx="103" cy="198" r="4" />
+                <circle cx="207" cy="179" r="4" /><circle cx="310" cy="155" r="4" />
+                <circle cx="413" cy="125" r="4" /><circle cx="517" cy="91" r="4" />
+                <circle class="last-point" cx="620" cy="55" r="6" />
+              </g>
             </svg>
-            <span class="chart-dot"></span>
+            <div class="chart-scale"><span>360</span><span>350</span><span>340</span></div>
           </div>
-          <div class="signal-stats">
-            <div><span>RECOVERY</span><strong>92</strong></div>
-            <div><span>OUTPUT</span><strong>7.8</strong></div>
-            <div><span>CONSISTENCY</span><strong>4.6</strong></div>
+          <div class="chart-dates"><span>JUN 01</span><span>JUN 15</span><span>JUL 01</span></div>
+          <div class="position-list">
+            <div class="position-row position-head"><span>EXERCISE</span><span>LAST</span><span>30D</span></div>
+            <div class="position-row"><span>Barbell bench</span><strong>237.6 lb</strong><em>+3.8%</em></div>
+            <div class="position-row"><span>Back squat</span><strong>348.2 lb</strong><em>+4.1%</em></div>
+            <div class="position-row"><span>Leg extension</span><strong>356.8 lb</strong><em>+5.4%</em></div>
           </div>
         </div>
       </section>
 
-      <section class="ticker" aria-label="Company capabilities">
-        <div class="ticker-track">
-          <span>MEASURE</span><i></i><span>ANALYZE</span><i></i><span>IMPROVE</span><i></i>
-          <span>HARDWARE</span><i></i><span>SOFTWARE</span><i></i><span>PERFORMANCE</span><i></i>
+      <section class="proof-strip" aria-label="Product capabilities">
+        <div class="shell proof-grid">
+          <div><strong>200 Hz</strong><span>Raw motion capture</span></div>
+          <div><strong>Set level</strong><span>Rep-by-rep history</span></div>
+          <div><strong>Day to day</strong><span>Comparable strength trend</span></div>
         </div>
       </section>
 
-      <section id="what-we-build" class="focus-section shell">
+      <section id="product" class="product-section shell">
         <div class="section-heading reveal">
-          <p class="eyebrow"><span></span> What we build</p>
-          <h2>Technology for the<br />work behind the result.</h2>
+          <p class="eyebrow"><span></span> A portfolio for performance</p>
+          <h2>See strength<br />as it compounds.</h2>
         </div>
         <p class="section-intro reveal delay-1">
-          We turn training data into clear, useful feedback—connecting physical effort with
-          digital insight so every session can inform the next.
+          A portfolio shows what changed, when it changed, and what drove the result. TMW brings
+          that same clarity to training by turning individual sessions into a continuous strength history.
         </p>
-
-        <div class="focus-grid">
-          <article class="focus-card reveal">
-            <span class="card-number">01</span>
-            <div class="card-icon sensor-icon" aria-hidden="true"><i></i><i></i><i></i></div>
-            <h3>Connected hardware</h3>
-            <p>Purpose-built tools designed to capture the signals that matter during training.</p>
+        <div class="product-ledger reveal">
+          <article>
+            <span class="ledger-index">01</span><h3>A daily mark</h3>
+            <p>Build a comparable strength estimate for each exercise every time you train it.</p>
+            <span class="ledger-tag">SESSION TO SESSION</span>
           </article>
-          <article class="focus-card reveal delay-1">
-            <span class="card-number">02</span>
-            <div class="card-icon data-icon" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
-            <h3>Performance software</h3>
-            <p>Thoughtful software that turns raw workout data into actionable information.</p>
+          <article>
+            <span class="ledger-index">02</span><h3>The data underneath</h3>
+            <p>Keep the velocity, load, reps, and set history behind each point on the chart.</p>
+            <span class="ledger-tag">TRACEABLE INPUTS</span>
           </article>
-          <article class="focus-card reveal delay-2">
-            <span class="card-number">03</span>
-            <div class="card-icon progress-icon" aria-hidden="true"><i></i><i></i><i></i></div>
-            <h3>Measurable progress</h3>
-            <p>Tracking that helps users understand patterns, refine training, and keep moving.</p>
+          <article>
+            <span class="ledger-index">03</span><h3>The trend, not the noise</h3>
+            <p>Follow meaningful direction across days and weeks instead of judging one workout.</p>
+            <span class="ledger-tag">LONGITUDINAL VIEW</span>
           </article>
         </div>
       </section>
 
-      <section class="principle-section shell">
-        <div class="principle-panel reveal">
-          <p class="eyebrow light"><span></span> Our principle</p>
-          <blockquote>“Useful technology should make the effort <em>clearer</em>—not more complicated.”</blockquote>
-          <div class="principle-footer">
-            <span>TMW Dynamics LLC</span>
-            <a href="contact.html">Start a conversation <span aria-hidden="true">→</span></a>
+      <section id="method" class="method-section">
+        <div class="shell method-grid">
+          <div class="method-copy reveal">
+            <p class="eyebrow light"><span></span> From movement to signal</p>
+            <h2>Every point has<br />a rep behind it.</h2>
+            <p>
+              TMW combines dedicated motion hardware with a training log built for measurable progression.
+              The result is a record you can inspect, compare, and use.
+            </p>
+          </div>
+          <ol class="method-list reveal delay-1">
+            <li><span>01</span><div><h3>Capture</h3><p>Measure movement directly during the set.</p></div></li>
+            <li><span>02</span><div><h3>Quantify</h3><p>Process velocity, reps, load, and fatigue into useful training data.</p></div></li>
+            <li><span>03</span><div><h3>Compare</h3><p>Place each session into a consistent day-to-day progression view.</p></div></li>
+          </ol>
+        </div>
+      </section>
+
+      <section class="closing-section shell">
+        <div class="closing-panel reveal">
+          <p class="eyebrow"><span></span> Built for the long view</p>
+          <h2>Train. Measure.<br /><em>Compound.</em></h2>
+          <div class="closing-footer">
+            <p>Progress is easier to trust when you can see the data behind it.</p>
+            <a class="button button-primary" href="contact.html">Start a conversation <span aria-hidden="true">&rarr;</span></a>
           </div>
         </div>
       </section>
@@ -138,23 +153,18 @@
             <span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span>
             <span>TMW <b>DYNAMICS</b></span>
           </a>
-          <p>Fitness technology and workout tracking solutions.</p>
+          <p>Data-backed strength tracking, from the rep to the long-term trend.</p>
         </div>
         <div class="footer-links">
-          <span>COMPANY</span>
-          <a href="index.html">Home</a>
-          <a href="contact.html">Contact &amp; Support</a>
-          <a href="privacy.html">Privacy Policy</a>
+          <span>EXPLORE</span><a href="#product">Product</a><a href="#method">Method</a><a href="contact.html">Contact &amp; Support</a>
         </div>
         <div class="footer-links">
-          <span>GET IN TOUCH</span>
-          <a href="mailto:timothy@tmwdynamics.com">timothy@tmwdynamics.com</a>
-          <p>Terre Haute, Indiana</p>
+          <span>COMPANY</span><a href="privacy.html">Privacy Policy</a><a href="mailto:timothy@tmwdynamics.com">timothy@tmwdynamics.com</a><p>Terre Haute, Indiana</p>
         </div>
       </div>
       <div class="shell footer-bottom">
-        <span>© <span data-year></span> TMW Dynamics LLC. All rights reserved.</span>
-        <span>BUILT FOR BETTER PERFORMANCE</span>
+        <span>&copy; <span data-year></span> TMW Dynamics LLC. All rights reserved.</span>
+        <span>STRENGTH, MEASURED OVER TIME</span>
       </div>
     </footer>
   </body>
