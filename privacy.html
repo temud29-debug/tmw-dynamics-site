@@ -33,7 +33,7 @@
     <main id="main-content" class="legal-main">
       <section class="legal-header shell">
         <div class="reveal"><p class="eyebrow"><span></span> Legal</p><h1>Privacy<br /><em>Policy.</em></h1></div>
-        <div class="legal-meta reveal delay-1"><span>LAST UPDATED</span><strong>August 19, 2026</strong></div>
+        <div class="legal-meta reveal delay-1"><span>LAST UPDATED</span><strong>September 8, 2026</strong></div>
       </section>
       <div class="legal-layout shell">
         <aside class="legal-aside reveal" aria-label="Privacy policy summary">
@@ -44,26 +44,47 @@
         <article class="legal-content reveal delay-1">
           <p class="legal-lede">
             This Privacy Policy explains how TMW Dynamics LLC ("TMW Dynamics," "we," "us," or
-            "our") handles information when you visit tmwdynamics.com or contact us.
+            "our") handles information when you use the TMW Dynamics iPhone or web app, connect a TMW
+            training device, visit tmwdynamics.com, or contact us.
           </p>
           <section id="information">
             <span class="legal-number">01</span><h2>Information we collect</h2>
-            <p>This website does not provide user accounts or web forms. If you email us, we receive your email address and the information you include in your message.</p>
+            <p><strong>Account information.</strong> The app uses your email address, account identifier, and basic profile information, such as your name, to authenticate you. If you choose Google sign-in, Google and our authentication provider process that sign-in.</p>
+            <p><strong>Training information.</strong> Workout records can include exercises, loads, repetitions, sets, timing, notes, training scores, and estimated strength metrics. You may also enter bodyweight and profile information. Bodyweight check-ins are cached locally under your account and synchronized through Supabase account metadata when saving succeeds. Preferences can also be stored locally; saved workouts synchronize to account-scoped cloud storage.</p>
+            <p><strong>Sensor and device information.</strong> When you record with a TMW device, the app processes accelerometer and gyroscope samples, orientation, timestamps, packet sequences, device identity, firmware and algorithm versions, and derived velocity data. Raw IMU samples and recording metadata can be saved with your workout so it can be replayed and recording quality investigated.</p>
+            <p><strong>Support and website information.</strong> If you email us, we receive your email address and anything you include. Website and API hosting providers may process IP addresses, request information, and operational logs needed to deliver and protect the service. This marketing website does not have account registration forms; app authentication uses its own session storage. The website loads fonts from Google Fonts, which receives the request information needed to serve them.</p>
           </section>
           <section id="use">
             <span class="legal-number">02</span><h2>How we use information</h2>
-            <p>We use the information you send us to respond to your inquiry or provide requested support.</p>
+            <p>We use information to authenticate accounts, record and replay workouts, calculate training metrics, show progression, recover interrupted sessions, synchronize saved history, respond to support requests, and investigate errors and device reliability.</p>
+            <p>We do not sell personal information, serve behavioral advertising, or use workout and motion data for advertising tracking.</p>
           </section>
           <section id="sharing">
-            <span class="legal-number">03</span><h2>Sharing and retention</h2>
-            <p>We do not sell your personal information. We may disclose information when required by law or to service providers used to operate our email and website. We retain email correspondence only as long as reasonably needed for support, business, or legal purposes.</p>
+            <span class="legal-number">03</span><h2>Service providers and sharing</h2>
+            <p>Supabase provides authentication and cloud database storage. Vercel hosts the web app and remote APIs. GitHub Pages hosts this marketing website. Our email provider processes support correspondence, and Google processes Google sign-in when selected. These providers process information needed to deliver their respective services and may operate in countries other than your own.</p>
+            <p>If you participate through Apple TestFlight, Apple processes beta distribution, crash information, and feedback under its own terms and privacy policy, and may make beta feedback and diagnostics available to us. We may also disclose information when legally required or necessary to protect the service and its users.</p>
+          </section>
+          <section id="diagnostics">
+            <span class="legal-number">04</span><h2>Diagnostics and Bluetooth</h2>
+            <p>The app keeps a bounded diagnostic log locally, including app/build versions, errors, recording status, sample counts, and packet gaps. Its diagnostic export excludes account identity, email, workout notes, lifted weights, and raw IMU samples. This log is not automatically uploaded; you choose whether to export and share it with us. Full raw recordings saved with your workout are separate from this diagnostic log.</p>
+            <p>Bluetooth permission allows the app to communicate with your TMW device. During an active connection, the native app can buffer samples while backgrounded so recording can recover when you return. You can disconnect the device or change Bluetooth permission in iPhone Settings.</p>
+          </section>
+          <section id="retention">
+            <span class="legal-number">05</span><h2>Storage and retention</h2>
+            <p>Active workouts, completed sets, raw recordings, timer state, and queued synchronization are stored on your device for recovery before relying on a network connection. Saved cloud workout records remain until you delete them or your account. Signing out does not delete your cloud account or history.</p>
+            <p>Unsynchronized bodyweight entries and local-only preferences may not be recoverable on another device. Provider backups and operational logs may persist according to provider retention schedules; account deletion does not promise immediate erasure of every backup. We retain support correspondence only as long as reasonably needed to handle support, business, or legal obligations.</p>
+          </section>
+          <section id="control">
+            <span class="legal-number">06</span><h2>Your choices and deletion</h2>
+            <p>You can delete workouts, clear or export local diagnostics in Settings, and permanently delete your account through the app's Settings. Account deletion removes your authentication account and associated server workout data and clears account-specific app data on the device where deletion is completed. Copies on other offline devices or files you exported separately may need to be removed there.</p>
+            <p>For access, correction, or deletion requests, or if you cannot access the app, email <a href="mailto:timothy@tmwdynamics.com">timothy@tmwdynamics.com</a>. We may need to verify account ownership before acting on a request. Never send us your password. Rights and legal obligations may vary with your location.</p>
           </section>
           <section id="changes">
-            <span class="legal-number">04</span><h2>Changes to this policy</h2>
+            <span class="legal-number">07</span><h2>Changes to this policy</h2>
             <p>We may update this Privacy Policy from time to time. We will post the revised policy on this page and update the "Last updated" date above.</p>
           </section>
           <section id="contact" class="legal-contact">
-            <span class="legal-number">05</span><h2>Contact us</h2>
+            <span class="legal-number">08</span><h2>Contact us</h2>
             <p>If you have questions or requests related to this Privacy Policy, contact:</p>
             <address><strong>TMW Dynamics LLC</strong><br />Terre Haute, Indiana<br /><a href="mailto:timothy@tmwdynamics.com">timothy@tmwdynamics.com</a></address>
           </section>
